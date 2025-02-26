@@ -11,7 +11,7 @@
   <body>
     <h1>Delete Article</h1>
     <p>Are you sure you want to delete {{ article.title }}?</p>
-    <form action="POST">
+    <form method="POST">
       {% csrf_token %}
       <button type="submit">Delete</button>
     </form>
