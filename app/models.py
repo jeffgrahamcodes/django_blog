@@ -18,11 +18,6 @@ class Article(models.Model):
     content = models.TextField(blank=True, default="")
     word_count = models.IntegerField()
     twitter_post = models.TextField(blank=True, default="")
-    status = models.CharField(
-        max_length=20,
-        choices=ARTICLE_STATUS,
-        default="draft"
-    )
+    status = models.CharField(max_length=20, choices=ARTICLE_STATUS, default="draft")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
