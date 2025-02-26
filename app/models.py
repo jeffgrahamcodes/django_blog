@@ -13,7 +13,7 @@ class UserProfile(AbstractUser):
     pass
 
 
-class Articles(models.Model):
+class Article(models.Model):
     title = models.CharField(max_length=100)
     content = models.TextField(blank=True, default="")
     word_count = models.IntegerField()
