@@ -3,9 +3,9 @@ from django.contrib.auth.models import AbstractUser
 
 
 ARTICLE_STATUS = (
-    ("draft", "draft"),
-    ("in_progress", "in_progress"),
-    ("published", "published"),
+    ("draft", "Draft"),
+    ("in_progress", "In Progress"),
+    ("published", "Published"),
 )
 
 
