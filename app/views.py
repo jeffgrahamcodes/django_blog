@@ -12,14 +12,14 @@ class ArticleListView(ListView):
 
 class ArticleCreateView(CreateView):
     model = Article
-    fields = ["title", "status", "content", "word_count", "twitter_post"]
+    fields = ["title", "status", "content", "twitter_post"]
     template_name = "app/article_create_form.html"
     success_url = reverse_lazy("home")
 
 
 class ArticleUpdateView(UpdateView):
     model = Article
-    fields = ["title", "status", "content", "word_count", "twitter_post"]
+    fields = ["title", "status", "content", "twitter_post"]
     template_name = "app/article_update_form.html"
     success_url = reverse_lazy("home")
     context_object_name = "article"

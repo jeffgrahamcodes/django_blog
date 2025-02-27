@@ -8,7 +8,7 @@
   {% if articles %}
     <ul>
       {% for article in articles %}
-        <li><a href="{% url "update_article" article.id %}">{{ article.title }}</a> with {{ article.word_count }} words</li>
+        <li><a href="{% url "update_article" article.id %}">{{ article.title }}</a> with {{ article.word_count }} word{{ article.word_count | pluralize }}.</li>
       {% endfor %}
     </ul>
   {% else %}
