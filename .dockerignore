@@ -1,0 +1,16 @@
+# Python bytecode files
+*.pyc
+*__pycache__
+
+# Environment-specific files
+.env
+.venv
+local_settings.py
+
+
+# Git files
+.git
+
+# Other
+*.log
+*.sqlite3
